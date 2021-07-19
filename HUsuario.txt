@@ -1,0 +1,8 @@
+La siguiente descripción sería lo que un usuario vería al usar los servicios en red de resiliencia:
+
+En una interfaz simple de billetera electrónica, dónde el usuario vea: su balance, historial de transacciones entrantes y salientes, y dónde ingresar la dirección 
+y la cantidad para una transferencia. Vea además, un espacio para seleccionar cuánto adicional quisiera agregar para establecer conexión con la red de resiliencia.
+Si la dirección a la que se envía 1. no es parte de la red y es la primera vez que se hace transacción con ésta, el adicional retorna inmediatamente 2. no es parte de la red,
+pero no es la primera vez que se hace transacción a esa dirección, el adicional no retorna. 3. Es parte de la red, el adicional no retorna, pero en adelante
+pequeñas transacciones van llegando poco a poco al balance (hasta recuperar el valor completo de la transacción inicial), qué tan rápido depende de la cantidad de
+valor adicional enviado inicialmente.     
