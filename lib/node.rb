@@ -1,9 +1,9 @@
 class Node
-  attr_reader :id
-  attr_accessor :balance
+  attr_accessor :balance, :incoming_edge, :outgoing_edge
 
-  def initialize(id, balance)
-    @id = id
+  def initialize(balance)
     @balance = balance
+    @incoming_edge = nil
+    @outgoing_edge = nil
   end
 end
