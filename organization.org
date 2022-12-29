@@ -1,0 +1,7 @@
+#+STARTUP: hidestars
+
+* Project
+** tasks
+- [ ] rewrite and check some tests
+- [ ] 
+
