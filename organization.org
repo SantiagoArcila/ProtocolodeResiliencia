@@ -3,5 +3,6 @@
 * Project
 ** TODO january [1/3]
 - [X] rewrite and check some tests
-- [ ] test graph creation
+- [ ] rewrite node tests since we are now storing the node id not the whole structure
 - [ ] graph creation basics
+- [ ] test graph creation
