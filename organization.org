@@ -5,8 +5,15 @@
 - [ ] transaction (path finding with the rules)
 - [ ] network distribution
 
-** TODO january [1/3]
+** TODO january [3/3]
 - [X] rewrite and check some tests
 - [X] rewrite node tests since we are now storing the node id not the whole structure
 - [X] test graph creation
-- [ ] how to calculate the balance?
+
+** TODO february [0/3]
+
+- [ ] ensure unidirectional graph (edge B-A can't be made if A-B already exists)
+- [ ] ensure tree structure (no loops like A-B-C-A)
+- [ ] edges carry data (value, %)
+
+
