@@ -12,9 +12,7 @@
 
 ** TODO february [0/3]
 
-- [ ] Allow nodes to have multiple incoming and outgoing edges
-- [ ] ensure unidirectional graph (edge B-A can't be made if A-B already exists)
-- [ ] ensure tree structure (no loops like A-B-C-A)
-- [ ] edges carry data (value, %)
+- [ ] ensure tree structure (no loops like A-B-C-A) *Edge A-B same as B-A, nodes can have multiple edges.
+- [ ] edges carry data (at least value, %, "transaction direction")
 
 
