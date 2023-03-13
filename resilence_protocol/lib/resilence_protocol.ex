@@ -1,16 +1,27 @@
 defmodule ResilenceProtocol do
+  @priv_dir "#{:code.priv_dir(:resilence_protocol)}"
+
+  @lib_dir @priv_dir <> "/lib"
+
+  defstruct ~w[data file path type uri]a
+
   @moduledoc """
-  initial effor to simulate `ResilenceProtocol` behaviour.
+  initial effor to simulate `ResilenceProtocol` simulation.
   """
 
-  @doc """
-  creates a random tree with given the quantity of nodes
-  """
-  @spec create_random_tree(integer()) :: :gb_trees
-  def create_random_tree(nodes) do
-    Enum.reduce(1..nodes, :gb_trees.empty(), fn node, tree ->
-      value = :rand.uniform(100)
-      :gb_trees.insert(node, value, tree)
-    end)
+  def new(graph_data, graph_file, graph_type) do
+    graphs_dir =
+      case graph_type do
+        :lib -> @lib_dir <> "/graphs/"
+        _ -> raise "! Unknown graph_type: " <> graph_type
+      end
+
+    %__MODULE__{
+      data: graph_data,
+      file: graph_file,
+      path: graphs_dir <> graph_file,
+      type: graph_type,
+      uri: "file://" <> graphs_dir <> graph_file
+    }
   end
 end
