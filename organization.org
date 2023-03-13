@@ -11,8 +11,13 @@
 - [X] test graph creation
 
 ** TODO february [0/3]
-
 - [ ] ensure tree structure (no loops like A-B-C-A) *Edge A-B same as B-A, nodes can have multiple edges.
 - [ ] edges carry data (at least value, %, "transaction direction")
+- [ ] read the graph from a dot file or csv (to decide)
 
+** TODO march [0/4]
+- [ ] generate an image or the given graph
+- [ ] read the graph from a dot file or csv (to decide)
+- [ ] edges carry data (at least value, %, "transaction direction")
+- [ ] ensure tree structure (no loops like A-B-C-A) *Edge A-B same as B-A, nodes can have multiple edges.
 
