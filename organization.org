@@ -21,3 +21,7 @@
 - [ ] edges carry data (at least value, %, "transaction direction")
 - [ ] ensure tree structure (no loops like A-B-C-A) *Edge A-B same as B-A, nodes can have multiple edges.
 
+
+at first glance we will be the ones that manually create the 
+graph to ensure that it has no cycles and has a tree 
+structure, we can use the methods of this library to assert that
