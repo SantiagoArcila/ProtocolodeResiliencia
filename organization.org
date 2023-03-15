@@ -17,6 +17,9 @@
 
 ** TODO march [0/4]
 - [ ] generate an image or the given graph
+- [ ] add the necessary information for each node, balance, tasa propia, tasa publica, adicionales, valor acumulado,
+	this can be done having the ets tables like shown on this article
+	https://medium.com/@tonyhammond/native-graph-data-in-elixir-8c0bb325d451		
 - [ ] read the graph from a dot file or csv (to decide)
 - [ ] edges carry data (at least value, %, "transaction direction")
 - [ ] ensure tree structure (no loops like A-B-C-A) *Edge A-B same as B-A, nodes can have multiple edges.
