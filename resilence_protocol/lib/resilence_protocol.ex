@@ -16,17 +16,20 @@ defmodule ResilenceProtocol do
   @doc """
   creates the node if does not exists
   """
-  # @spec set_balance(number()) :: :ok
+  @spec set_balance(Graph.t(), term(), number()) :: Graph.t()
   def set_balance(graph, node, value) do
-    :ets.insert(@node_table, {:balance, value})
+    dbg()
+    :ets.insert(@node_table, {node, %{balance: value}})
     Graph.add_vertex(graph, node)
   end
 
-  # @spec get_balance(number()) :: :ok
-  def get_balance() do
-    :ets.lookup(@node_table, :balance)
+  @spec get_node_variables(term()) :: list()
+  def get_node_variables(node) do
+    dbg(node)
+    :ets.lookup(@node_table, node)
   end
 
+  @spec print_tables_info() :: :ok
   def print_tables_info() do
     :ets.i(@node_table)
     :ets.i(@edge_table)
