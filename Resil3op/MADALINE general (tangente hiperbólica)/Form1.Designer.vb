@@ -57,18 +57,18 @@ Partial Class Form1
         Me.Label2.AutoSize = True
         Me.Label2.Location = New System.Drawing.Point(125, 83)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(57, 13)
+        Me.Label2.Size = New System.Drawing.Size(94, 13)
         Me.Label2.TabIndex = 28
-        Me.Label2.Text = "Ejecución:"
+        Me.Label2.Text = "Escritura de Datos"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Location = New System.Drawing.Point(125, 22)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(90, 13)
+        Me.Label1.Size = New System.Drawing.Size(54, 13)
         Me.Label1.TabIndex = 27
-        Me.Label1.Text = "Lectura de datos:"
+        Me.Label1.Text = "Ejecución"
         '
         'ProgressBar2
         '
@@ -108,7 +108,7 @@ Partial Class Form1
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(91, 23)
         Me.Button2.TabIndex = 22
-        Me.Button2.Text = "Identificación"
+        Me.Button2.Text = "Ejecución"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Button1

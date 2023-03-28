@@ -1,4 +1,0 @@
-Sobreescrito sobre código reciclado de redes neuronales.
-(por eso el nombre)
-
-Ni siquiera hay ejecutable todavía, todo en depuración. 
