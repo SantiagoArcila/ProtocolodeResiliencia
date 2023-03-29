@@ -5,15 +5,16 @@ defmodule ResilenceProtocolTest do
     %{graph: ResilenceProtocol.initialice_protocol()}
   end
 
-  test "creates a graph with balance for each node", %{graph: graph} do
-    result_graph =
-      Enum.reduce([?a..?c], graph, fn node, graph ->
-        ResilenceProtocol.set_balance(graph, node, 1)
+  test "creates a graph with balance for each vertex", %{graph: graph} do
+    vertices = [:a, :b, :c]
+
+    _result_graph =
+      Enum.reduce(vertices, graph, fn vertex, acc ->
+        ResilenceProtocol.set_balance(acc, vertex, 1)
       end)
 
-    assert ResilenceProtocol.get_node_variables(?a) == 1
-
-    dbg(result_graph)
-    graph = flunk("to implement")
+    for vertex <- vertices do
+      assert [{^vertex, %{balance: 1}}] = ResilenceProtocol.get_vertex_variables(vertex)
+    end
   end
 end
